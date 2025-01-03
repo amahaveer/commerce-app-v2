@@ -1,0 +1,70 @@
+{
+  "header": {
+    "home": "Startseite",
+    "products": "Produkte",
+    "shop": "Shop",
+    "coupons": "Gutscheine",
+    "blog": "Blog",
+    "contact": "Kontakt",
+    "categories": "kategorie"
+  },
+
+  "common": {
+    "homepage": "Startseite",
+    "logoImageAltText": "Logo",
+    "aboutUs": "über uns",
+    "description1": "Wir wurden 1984 von der Designerin Chantelle West gegründet und haben schon immer an die Kraft lokal hergestellter Waren geglaubt.",
+    "description2": "Die Qualität der Handwerkskunst und die lokalen Handwerker, die wir beschäftigen, machen Luxette zu unserer Lebensaufgabe.",
+    "poweredBy": "Unterstützt von",
+    "regionalSettings": "Regionale Einstellungen",
+    "language": "Sprache"
+  },
+  "product": {
+    "trendingProducts": "Gerade angesagt",
+    "relatedProducts": "Sie können auch mögen",
+    "addToCart": "In den Warenkorb legen",
+    "quantity": "Menge"
+  },
+  "notFound": {
+    "title": "Seite nicht gefunden",
+    "description": "Diese Seite scheint nicht zu existieren. <0>Klicken Sie hier</0>, um zur Startseite zurückzukehren."
+  },
+  "popularProductCarousel":{
+    "title":"Winkel op populair",
+    "subtitle":"Populair in de Shofy winkel.",
+    "addToCart":"Voeg toe aan winkelwagen"
+  },
+  "trendingProducts":{
+    "title":"Meer te ontdekken",
+    "subtitle":"Populaire aankomsten",
+    "explore":"Ontdek meer",
+    "slogan":"Tuniektopjes met korte mouwen en casual swing" 
+  },
+  "favoriteProduct":{
+    "title":"Alle product winkel",
+    "subtitle":"Klant favoriete stijl product",
+    "all":"Alle collectie",
+    "shoes":"Schoenen",
+    "clothing":"Kleding",
+    "bags":"Zakken" 
+  },
+  "productCard":{
+    "addToCart":"Voeg toe aan winkelwagen",
+    "quickView":"Snelle weergave",
+    "addToWishList":"Voeg toe aan verlanglijst",
+    "addToCompare":"Voeg toe om te vergelijken"
+  },
+  "productListButtons":{
+    "addtocart": "Zum Warenkorb hinzufügen" ,
+    "addtoquickView": "Zur Schnellansicht hinzufügen" ,
+    "addtowishlist": "Zur Wunschliste hinzufügen" ,
+    "addtocompare": "Zum Vergleich hinzufügen"
+  },
+  "login": {
+    "login": "Inloggen",
+    "heading": "Voer je e-mailadres en wachtwoord in om in te loggen op je account",
+    "email": "E-mail",
+    "password":"Wachtwoord"
+  }
+
+}

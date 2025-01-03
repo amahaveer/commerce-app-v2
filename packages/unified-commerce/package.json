@@ -1,0 +1,30 @@
+{
+	"name": "@royalcyber/unified-commerce",
+	"version": "1.0.0",
+	"license": "UNLICENSED",
+	"main": "lib/index.js",
+	"scripts": {
+		"dev": "tsup --env.NODE_ENV dev",
+		"build": "tsup",
+		"release": "tsup",
+		"prepublishOnly": "rm -rf lib && yarn install && yarn release",
+		"prettier:fix": "prettier --write .",
+		"test": "vitest"
+	},
+	"dependencies": {
+		"@frontastic/extension-types": "^0.0.11",
+		"cookie": "^0.5.0",
+		"qs": "^6.12.1"
+	},
+	"devDependencies": {
+		"@types/cookie": "^0.5.1",
+		"@types/core-js": "2.5.5",
+		"@types/node": "^18.14.0",
+		"@types/qs": "^6.9.15",
+		"cross-fetch": "^3.1.6",
+		"prettier": "2.7.1",
+		"tsup": "^8.2.4",
+		"typescript": "^5.5.4",
+		"vitest": "^2.0.5"
+	}
+}

@@ -1,0 +1,81 @@
+
+  
+  .step {
+    /* display: flex; */
+    /* align-items: center; */
+    /* position: relative; */
+  }
+
+  .stepper-listing {
+    background: "yellow";
+    padding: "20px";
+    width: "90vh"
+  }
+  
+  .circle {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #FFFFFF ;
+    border-radius: 50%;
+    border-color: rgb(238, 231, 231);
+    background-color: #FFFFFF;
+    color: #B6B8C7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 14px;
+    transition: background-color 0.3s;
+  }
+  
+  .label {
+    margin-left: 10px;
+    font-size: 16px;
+    color:#B6B8C7;
+    transition: color 0.3s;
+  }
+  
+  .line {
+    flex-grow: 1;
+    height: 2px;
+    background-color: #e0e0e0;
+    margin: 0 10px;
+  }
+  
+  .step.active .circle {
+    background-color: rgb(78,78, 231);
+    color: white; 
+  }
+  
+  .step.active .label {
+    color: rgb(78,78, 231);
+  }
+  
+  .step:not(.active) .circle {
+    border-color:#B6B8C7; /* Red border for inactive circles */
+  }
+  
+  /* Make the container take up the full height */
+.stepper-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 97vh;
+}
+
+/* Make the main content flex-grow to push footer buttons to the bottom */
+.stepper-content {
+  flex-grow: 1;
+  padding: 20px;
+}
+
+/* Ensure the footer is always at the bottom */
+.stepper-footer {
+  display: flex;
+  justify-content: space-between;
+  /* padding: 16px; */
+  border-top: 1px solid #e0e0e0;
+  background-color: #f9f9f9;
+  position: sticky;
+  bottom: 0;
+  width: 100%;
+}

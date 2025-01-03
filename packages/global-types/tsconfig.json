@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "commonjs",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "allowSyntheticDefaultImports": true,
+    "declaration": true,
+    "declarationMap": true,
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "typeRoots": ["./node_modules/@types"] // Ensure this includes the 'types' folder
+  },
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.d.ts" // Ensure custom types are included
+  ],
+  "exclude": [
+    "node_modules", // Exclude `node_modules` to prevent conflicts
+    "dist" // Exclude the output directory
+  ]
+}

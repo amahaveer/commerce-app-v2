@@ -1,0 +1,42 @@
+{
+  "name": "@royalcyber/commerce-ct-service",
+  "version": "1.0.0",
+  "main": "index.js",
+  "engines": {
+    "node": "16.14 - 22.x"
+  },
+  "scripts": {
+    "dev": "tsc & node dist/server.js",
+    "build": "tsc",
+    "start": "node dist/server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@apollo/server": "^4.11.0",
+    "@commercetools/platform-sdk": "^7.14.0",
+    "@commercetools/sdk-client-v2": "^2.5.0",
+    "apollo-server-express": "^3.13.0",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.0",
+    "graphql": "^16.9.0",
+    "jsonwebtoken": "^9.0.2",
+    "node-fetch": "^2.7.0",
+    "performance-now": "^2.1.0"
+  },
+  "devDependencies": {
+    "@royalcyber/global-types": "^1.0.0",
+    "@types/express": "^4.17.21",
+    "@types/jest": "^29.5.13",
+    "@types/jsonwebtoken": "^9.0.7",
+    "@types/node": "^22.5.5",
+    "jest": "^29.7.0",
+    "nodemon": "^3.1.5",
+    "supertest": "^7.0.0",
+    "ts-jest": "^29.2.5",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.2"
+  }
+}

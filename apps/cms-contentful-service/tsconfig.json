@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "commonjs",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "allowSyntheticDefaultImports": true,
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "typeRoots": ["./node_modules/@types", "./src/types"]  // Ensure this includes the 'types' folder
+  },
+  "include": [
+    "src/**/*.ts",
+    "src/types/**/*.d.ts",// Ensure custom types are included
+    "tests/*.ts"
+  ]
+}

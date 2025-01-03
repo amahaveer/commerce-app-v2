@@ -1,0 +1,128 @@
+.swiper {
+  width: 100%;
+  height: 100%;
+ 
+}
+ 
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+ 
+ 
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mySwiper{
+  right: 0px;
+}
+ 
+@media (min-width: 540px) {
+  .popular-product-carousel .swiper-scrollbar {
+    width: calc(100% - 200px) !important;
+    margin-right: 100px;
+    margin-left: 100px;
+    cursor: pointer;
+  }
+}
+ 
+.trending-wrapper .swiper-pagination{
+  line-height: 1;
+  margin-top: 45px;
+  position: relative;
+}
+ 
+.trending-area{
+  .trending-banner-title a{
+    background-image: linear-gradient(#fff, #fff), linear-gradient(#fff, #fff);
+    background-size: 0 1px, 0 1px;
+    background-position: 100% 100%, 0 81%;
+    background-repeat: no-repeat;
+    transition: background-size 0.4s linear;
+    padding-bottom: 3px;
+  }
+}
+.trending-area .trending-banner-title a:hover {
+  background-size: 0 1px, 100% 1px; /* Adjust this for your hover effect */
+  text-decoration: none;
+}
+ 
+.trending-area .trending-banner::after{
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(180deg, rgba(1, 15, 28, 0) 44.84%, rgba(1, 15, 28, .6));
+}
+ 
+.product-tag a::after {
+  position: absolute;
+  content: "";
+  left: auto;
+  right: 0;
+  bottom: 0;
+  width: 0;
+  height:0.5px;
+  background-color: currentColor; /* Matches the color of the text */
+  transition: width 0.3s ease;
+}
+ 
+.product-tag a:hover::after {
+  left: 0;
+  right: auto;
+  width: 100%;
+}
+ 
+.product-wrapper:hover .product-action{
+  opacity: 100;
+  visibility: visible;
+  left: 25px;
+}
+ 
+.product-wrapper:hover .product-thumb .images{
+transform: scale(1.1);
+ 
+}
+ 
+.data-\[state\=active\]\:shadow-sm[data-state="active"] {  
+  box-shadow:none;
+}
+ 
+ 
+.tab-tooltip{
+top: -22px;
+  border-radius: 4px;
+  position: absolute;
+  background-color: #821f40;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+ 
+.tab-tooltip::after{
+  position: absolute;
+  content: "";
+  bottom: 0;
+  bottom: -5px;
+  left: 7px;
+  width: 13px;
+  height: 6px;
+  background-color: #821f40;
+  -webkit-clip-path: polygon(100% 0, 0 0, 28% 100%);
+  clip-path: polygon(100% 0, 0 0, 28% 100%);
+}
+ 
+button[data-state="active"] .tab-tooltip {
+opacity: 1;
+visibility: visible;
+}
+
+
+
+
+

@@ -1,0 +1,69 @@
+{   
+    "header":{
+      "home": "Home",
+      "products": "Products",
+       "shop": "Shop",
+       "coupons": "Coupons",
+       "blog": "Blog",
+       "contact": "Contact",
+       "categories": "Categories"
+    },
+    "common": {
+      "homepage": "Homepage",
+      "logoImageAltText": "Logo",
+      "aboutUs": "about us",
+      "description1": "Founded in 1984 by designer Chantelle West, we've always believed in the power of locally made goods.",
+      "description2": "The quality of the craftsmanship and the local artisans we employ are what make Luxette our mission in life.",
+      "poweredBy": "Powered by",
+      "regionalSettings": "Regional Settings",
+      "language": "Language"
+    },
+    "product": {
+      "trendingProducts": "Trending now",
+      "relatedProducts": "You may also like",
+      "addToCart": "Add to cart",
+      "quantity": "Quantity"
+    },
+    "notFound": {
+      "title": "Page not found",
+      "description": "This page doesn't seem to exist. <0>Click here</0> to go back the homepage."
+    },
+    "popularProductCarousel":{
+      "title":"Shop by Popular",
+      "subtitle":"Popular on the Shofy store.",
+      "addToCart":"Add to cart"
+    },
+    "trendingProducts":{
+      "title":"More to Discover",
+      "subtitle":"Trending Arrivals",
+      "explore":"Explore More",
+      "slogan":"Short Sleeve Tunic Tops Casual Swing"
+    },
+    "favoriteProduct":{
+      "title":"All Product Shop",
+      "subtitle":"Customer Favorite Style Product", 
+      "all":"All Collection",
+      "shoes":"Shoes",
+      "clothing":"Clothing",
+      "bags":"Bags"
+    },
+    "productCard":{
+      "addToCart":"Add to cart",
+      "quickView":"Quick View",
+      "addToWishList":"Add to Wishlist",
+      "addToCompare":"Add To Compare"
+    },
+    "productListButtons":{
+      "addtocart": "Add to Cart" ,
+      "addtoquickView": "Add to QuickView" ,
+      "addtowishlist": "Add to Wishlist" ,
+      "addtocompare": "Add to Compare"
+    },
+    "login": {
+      "login": "Login",
+      "heading": "Enter your email and password to login to your account",
+      "email": "Email",
+      "password":"Password"
+    }
+  }
+  

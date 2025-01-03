@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "commonjs",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "allowSyntheticDefaultImports": true,
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "paths": {
+      "@commerce-ct-service": ["../commerce-ct-service"],
+      "@commerce-ct-service/*": ["../commerce-ct-service/*"],
+    },
+    "typeRoots": ["./node_modules/@types"] // Ensure this includes the 'types' folder
+  },
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.d.ts" // Ensure custom types are included
+  ]
+}

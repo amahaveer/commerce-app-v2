@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="SDK core" basedir="./" default="test">
+
+	<property name="frontastic_basedir" value="${basedir}/../../.." />
+	<property name="integration_dir" value="${frontastic_basedir}/paas/integration" />
+
+	<!--
+        Include local project properties.
+    -->
+	<property file="${basedir}/environment.local" />
+	<property file="${basedir}/../environment.local" />
+	<property file="${basedir}/environment" />
+	<property file="${basedir}/../environment" />
+
+	<!--
+        Import main target defintions (extension points)
+    -->
+	<import file="${integration_dir}/main.xml" />
+
+	<target name="commercetools extension:setup-node" extensionOf="-initialize:before~hook">
+		<exec executable="n">
+			<env key="N_PREFIX" value="/opt/n-for-ci" />
+			<arg value="18" />
+		</exec>
+	</target>
+
+	<!--
+        Custom initialize, test and build
+    -->
+	<target name="SDK core:bootstrap" extensionOf="-initialize:main~hook">
+		<tool-exists executable="yarn" />
+
+		<exec executable="n" failonerror="true" dir="${basedir}">
+			<env key="N_PREFIX" value="/opt/n-for-ci" />
+			<env key="CI" value="true" />
+
+			<arg value="run" />
+			<arg value="18" />
+
+			<arg value="/usr/bin/yarn" />
+			<arg value="--network-timeout" />
+			<arg value="1000000000" />
+
+			<!-- This is a workaround for ENOENT errors: https://github.com/yarnpkg/yarn/issues/2629 -->
+			<arg value="--mutex" />
+			<arg value="network" />
+			<arg value="--network-concurrency" />
+			<arg value="1" />
+
+			<arg value="install" />
+		</exec>
+	</target>
+
+	<target name="SDK core:test" unless="${production}" extensionOf="-test-unit:main~hook">
+		<tool-exists executable="yarn" />
+		<!--TODO:
+		implement-->
+		<!--<exec
+		executable="n" dir="${basedir}">
+            <env key="N_PREFIX" value="/opt/n-for-ci" />
+            <env key="CI" value="true" />
+
+            <arg value="run" />
+            <arg value="18" />
+
+            <arg value="/usr/bin/yarn" />
+            <arg value="run" />
+            <arg value="lint" />
+        </exec>-->
+		<exec executable="n" dir="${basedir}" failonerror="true">
+			<env key="N_PREFIX" value="/opt/n-for-ci" />
+			<env key="CI" value="true" />
+
+			<arg value="run" />
+			<arg value="18" />
+
+			<arg value="/usr/bin/yarn" />
+			<arg value="run" />
+			<arg value="test" />
+		</exec>
+	</target>
+
+	<target name="SDK core:package" depends="initialize" extensionOf="-package:before~hook">
+		<tool-exists executable="yarn" />
+
+		<exec executable="n" dir="${basedir}" failonerror="true">
+			<env key="N_PREFIX" value="/opt/n-for-ci" />
+			<env key="CI" value="true" />
+
+			<arg value="run" />
+			<arg value="18" />
+
+			<arg value="/usr/bin/yarn" />
+			<arg value="run" />
+			<arg value="build" />
+		</exec>
+	</target>
+</project>

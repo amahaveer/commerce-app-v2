@@ -1,0 +1,8 @@
+
+
+const ProductAnalyticsResolver = {
+
+    Query: {
+        getProductPriceAnalytics: 
+    },
+}

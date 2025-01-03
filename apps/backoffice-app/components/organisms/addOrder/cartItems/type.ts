@@ -1,0 +1,4 @@
+
+interface IAddCustomLineItemProps {
+    closeDrawer: () => void;
+}

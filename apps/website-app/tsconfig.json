@@ -1,0 +1,23 @@
+{
+  "extends": "@repo/typescript-config/nextjs.json",
+  "compilerOptions": {
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "paths": {
+      "@/*": ["./*"],
+      "shared/types": ["../types"],
+      "shared/types/*": ["../types/*"]
+    }
+  },
+  "include": [
+    "next-env.d.ts",
+    "next.config.mjs",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts", 
+    "app/icons/ProductIcon/AddToCart.jsx", "app/icons/ProductIcon/WishList.jsx", "app/icons/ProductIcon/QuickView.jsx", "app/icons/ProductIcon/AddToCompare.jsx"  ],
+  "exclude": ["node_modules"]
+}

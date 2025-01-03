@@ -1,0 +1,13 @@
+{
+	"compilerOptions": {
+		"lib": ["esnext", "dom", "ES2018.Intl"],
+		"target": "ES2022",
+		"moduleResolution": "node",
+		"strict": true,
+		"allowSyntheticDefaultImports": true,
+		"types": ["node"],
+		"declaration": true,
+		"outDir": "lib",
+	},
+	"exclude": ["node_modules", "lib", "test"]
+}
