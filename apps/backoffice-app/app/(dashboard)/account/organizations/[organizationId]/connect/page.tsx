@@ -7,7 +7,7 @@ import Image from 'next/image';
 import Apps from "./connectApp.json";
 import { useEffect, useState } from 'react';
 import AppDrawer from '@/components/atoms/AppDrawer';
-import { eConnectedApp } from '@/shared-types/index';
+import { eConnectedApp } from '@royalcyber/global-types/src/backoffice-types/index';
 import { IConnectAppList } from './type';
 import CommercetoolConfiguration from '@/components/organisms/connectedApp/commercetool/configForm';
 import SmtpConfiguration from '@/components/organisms/connectedApp/smtp/configForm';

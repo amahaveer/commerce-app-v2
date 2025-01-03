@@ -1,6 +1,6 @@
 import { ADD_EXTENSION_APP, GET_EXTENSION_CONFIG_BY_ORG, UNINSTALL_EXTENSION_APP } from "./graphql/extensionApp.schema";
 import client from './apolloClient';
-import { IAddExtensionApp } from "@/shared-types/extensionApp";
+import { IAddExtensionApp } from "@royalcyber/global-types/src/backoffice-types/extensionApp";
 import { toast } from "react-toastify";
 
 
