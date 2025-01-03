@@ -1,10 +1,10 @@
 
 
-// const AnalyticsPage = () => {
+const AnalyticsPage = () => {
 
-//     return (
+    return (
+        <div></div>
+    )
+}
 
-//     )
-// }
-
-// export default AnalyticsPage;
+export default AnalyticsPage;
