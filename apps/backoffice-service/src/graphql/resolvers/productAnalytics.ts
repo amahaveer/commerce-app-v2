@@ -3,6 +3,6 @@
 const ProductAnalyticsResolver = {
 
     Query: {
-        getProductPriceAnalytics: 
+        // getProductPriceAnalytics: 
     },
 }

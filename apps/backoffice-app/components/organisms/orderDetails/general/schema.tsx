@@ -1,4 +1,5 @@
-import { eOrderPermissions } from "@/shared-types/permissions/orderPermissions.type";
+import { eOrderPermissions } from "@royalcyber/global-types/src/backoffice-types/permissions/orderPermissions.type";
+
 import { IFormFieldMapper, IFormSchemaParams, ITranslateFunc } from "types/global";
 import { getOrderStatusOptions, getPaymentStatusOptions, getShipmentStatusOptions } from "utils/order";
 

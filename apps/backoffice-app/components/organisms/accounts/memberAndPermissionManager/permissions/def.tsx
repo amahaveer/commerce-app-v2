@@ -1,6 +1,7 @@
-import { eOrderPermissions } from "@/shared-types/permissions/orderPermissions.type";
-import { eProductPermissions } from "@/shared-types/permissions/productPermissions.type";
-import { eCustomerPermission } from "@/shared-types/permissions/customerPermissions.type";
+import { eOrderPermissions } from "@royalcyber/global-types/src/backoffice-types/permissions/orderPermissions.type";
+import { eProductPermissions  } from "@royalcyber/global-types/src/backoffice-types/permissions/productPermissions.type";
+import { eCustomerPermission  } from "@royalcyber/global-types/src/backoffice-types/permissions/customerPermissions.type";
+
 import { Typography } from '@mui/material';
 
 export const productPermissionFields = [

@@ -15,8 +15,7 @@ import AddDelivery from './addDelivery';
 import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
 import EditOrderDelivery from './editDelivery';
 import { usePermissions } from 'context/permissions.context';
-import { eOrderPermissions } from '@/shared-types/permissions/orderPermissions.type';
-
+import { eOrderPermissions } from "@royalcyber/global-types/src/backoffice-types/permissions/orderPermissions.type";
 
 
 const OrderShippingAndDelivery = () => {

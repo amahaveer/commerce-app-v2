@@ -1,4 +1,4 @@
-import { eCategoryPermission } from '@/shared-types/permissions/categoryPermissions.type';
+import { eCategoryPermission } from '@royalcyber/global-types/src/backoffice-types/permissions/categoryPermissions.type';
 import CategoryGeneralComponent from './general';
 import CategoryProductsComponent from './products';
 import CategoryExtSearchComponent from './extSearch';

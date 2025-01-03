@@ -12,7 +12,7 @@ import { getOrderReturnListColumns } from './columns';
 import DataTable from '@/components/atoms/DataTable';
 import { formatDateTime } from 'utils';
 import { usePermissions } from 'context/permissions.context';
-import { eOrderPermissions } from '@/shared-types/permissions/orderPermissions.type';
+import { eOrderPermissions } from "@royalcyber/global-types/src/backoffice-types/permissions/orderPermissions.type";
 
 const OrderReturnsComponent = () => {
 

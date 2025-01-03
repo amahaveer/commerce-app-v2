@@ -1,11 +1,11 @@
 import AccordianUnControlled from '@/components/atoms/Accordian';
 import SelectDropdown from '@/components/atoms/SelectDropdown';
-import { eProductPermissions, productPermissionLabels } from '@/shared-types/permissions/productPermissions.type';
-import { IProjectPermissionData } from '@/shared-types/permissions';
+import { eProductPermissions, productPermissionLabels  } from "@royalcyber/global-types/src/backoffice-types/permissions/productPermissions.type";
+import { IProjectPermissionData } from '@royalcyber/global-types/src/backoffice-types/permissions';
 import { Box, IconButton, Typography } from '@mui/material';
 import useTranslate from 'hooks/useTranslate';
 import Checkbox from '@mui/material/Checkbox';
-import { eOrderPermissions, orderPermissionLabels } from '@/shared-types/permissions/orderPermissions.type';
+import { eOrderPermissions, orderPermissionLabels } from '@royalcyber/global-types/src/backoffice-types/permissions/orderPermissions.type';
 import { IMemberAndPermissionManagerProps } from '../type';
 import React, { useEffect, useState } from 'react';
 import { getProjectsByOrganizationId } from 'app/api/project.api';

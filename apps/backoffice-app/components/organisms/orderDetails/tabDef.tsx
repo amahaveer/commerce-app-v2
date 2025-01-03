@@ -1,4 +1,4 @@
-import { eOrderPermissions } from "@/shared-types/permissions/orderPermissions.type";
+import { eOrderPermissions } from "@royalcyber/global-types/src/backoffice-types/permissions/orderPermissions.type";
 import OrderCustomFieldComponent from "./customFields";
 import OrderGeneralInfo from "./general";
 import OrderReturnsComponent from "./returns";
